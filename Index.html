@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banheiro • Tour 360°</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }body {
+  background: #0f172a;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.tour-container {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+footer {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+  </style>
+</head>
+<body>  <h1>Banheiro • Visualização 360°</h1>  <div class="tour-container">
+    <iframe
+      src="https://koala360.com/tour?id=44386&preview=true"
+      name="my360Tour"
+      scrolling="no"
+      allow="accelerometer; magnetometer; gyroscope; fullscreen; xr-spatial-tracking;"
+      allowfullscreen
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true">
+    </iframe>
+  </div>  <footer>
+    Arraste, toque ou mova o celular para explorar o ambiente em 360°
+  </footer></body>
+</html>
